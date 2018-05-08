@@ -8,7 +8,7 @@
 .login {
    @extend %centerContent;
    height: 100vh;
-   background: pink;
+   // background: pink;
 
    form {
       display: flex;
@@ -16,7 +16,8 @@
       padding: 30px 50px;
       box-sizing: border-box;
       border-radius: 8px;
-      background: linear-gradient(10deg, $white, lightblue);
+      border: 2px solid $lightBlue;
+      background: linear-gradient(0deg, $white, $lightBlue);
    }
 
    .btn {
@@ -34,9 +35,8 @@
       @extend %centerContent;
       width: 150px;
       height: 150px;
-      border: 4px solid lightgrey;
       border-radius: 50%;
-      margin: 0 auto 10px auto;
+      margin: 0 auto 20px auto;
       background: $white;
       overflow: hidden;
 
@@ -47,7 +47,8 @@
             width: 15px;
             height: 15px;
             margin: 0 16px;
-            background: black;
+            border-radius: 50%;
+            background: rgb(90, 78, 194);
          }
       }
    }

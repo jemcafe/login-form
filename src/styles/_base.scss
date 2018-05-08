@@ -6,18 +6,23 @@ body {
 }
 
 h1,h2 {
-    // margin: 0;
+    margin: 5px 0;
     color: $bluePurple;
 }
 
 input {
-    outline-color: lightgreen;
-    border: 1px solid $bluePurple;
-    border-radius: 4px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid $lightBlue;
     margin: 12px 0;
-    padding: 5px;
+    padding: 6px;
     font-size: $fontSize;
     box-sizing: border-box;
+
+    &:focus {
+        border: 2px solid $lightBlue;
+        box-sizing: border-box;
+    }
 }
 
 ::placeholder {

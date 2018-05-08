@@ -5,16 +5,20 @@ body {
   text-align: center; }
 
 h1, h2 {
+  margin: 5px 0;
   color: #4e46c5; }
 
 input {
-  outline-color: lightgreen;
-  border: 1px solid #4e46c5;
-  border-radius: 4px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #a0b8f8;
   margin: 12px 0;
-  padding: 5px;
+  padding: 6px;
   font-size: 20px;
   box-sizing: border-box; }
+  input:focus {
+    border: 2px solid #a0b8f8;
+    box-sizing: border-box; }
 
 ::placeholder {
   color: #c4c4c4; }
@@ -25,15 +29,15 @@ input {
   align-items: center; }
 
 .login {
-  height: 100vh;
-  background: pink; }
+  height: 100vh; }
   .login form {
     display: flex;
     flex-direction: column;
     padding: 30px 50px;
     box-sizing: border-box;
     border-radius: 8px;
-    background: linear-gradient(10deg, #fff, lightblue); }
+    border: 2px solid #a0b8f8;
+    background: linear-gradient(0deg, #fff, #a0b8f8); }
   .login .btn {
     outline: none;
     color: #fff;
@@ -46,13 +50,13 @@ input {
   .login .logo {
     width: 150px;
     height: 150px;
-    border: 4px solid lightgrey;
     border-radius: 50%;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
     background: #fff;
     overflow: hidden; }
     .login .logo .eyes .eye {
       width: 15px;
       height: 15px;
       margin: 0 16px;
-      background: black; }
+      border-radius: 50%;
+      background: #5a4ec2; }
